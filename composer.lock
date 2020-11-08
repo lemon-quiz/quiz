@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28d5f3310fc5a138967e7be8358433a0",
+    "content-hash": "4311d2bb3eb5798776ad56c4d6a9f4b8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -950,12 +950,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-code/event-sourcing.git",
-                "reference": "38ad1530efb8b0f5ca30f85d425223d08fd75188"
+                "reference": "3b04581d0c0d9430c8eeb5590e263aadc58177a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-code/event-sourcing/zipball/38ad1530efb8b0f5ca30f85d425223d08fd75188",
-                "reference": "38ad1530efb8b0f5ca30f85d425223d08fd75188",
+                "url": "https://api.github.com/repos/laravel-code/event-sourcing/zipball/3b04581d0c0d9430c8eeb5590e263aadc58177a4",
+                "reference": "3b04581d0c0d9430c8eeb5590e263aadc58177a4",
                 "shasum": ""
             },
             "require": {
@@ -1002,7 +1002,7 @@
                 "source": "https://github.com/laravel-code/event-sourcing/tree/main",
                 "issues": "https://github.com/laravel-code/event-sourcing/issues"
             },
-            "time": "2020-11-03T19:32:24+00:00"
+            "time": "2020-11-08T09:59:47+00:00"
         },
         {
             "name": "laravel-code/middleware",
@@ -9265,7 +9265,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.3|^8.0"
+        "php": "^7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "1.1.0"
