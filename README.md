@@ -1,10 +1,4 @@
-## Very basic skeleton app, ready for development
-
-- laravel 8
-- ide-helper
-- php cs
-- laravel-code/middleware
-- laravel-code/event-sourcing
+# quizzes service
 
 
 ## Setup
@@ -18,7 +12,6 @@ Complete the .env file
 ``docker-compose up`` this will open up a webserver on the given port
 
 ``docker-compose run app bash`` run php commands within Docker, for migrations etc.
-
 
 
 # Middleware

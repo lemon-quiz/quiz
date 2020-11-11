@@ -25,6 +25,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $position
  * @method static \Illuminate\Database\Eloquent\Builder|Item whereGroup($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Item wherePosition($value)
+ * @property int $revision_number
+ * @method static \Illuminate\Database\Eloquent\Builder|Item whereRevisionNumber($value)
  */
 class Item extends Model
 {
@@ -37,7 +39,7 @@ class Item extends Model
         'position',
     ];
 
-    public bool $timestamps = false;
+    public $timestamps = false;
 
     public function quiz()
     {

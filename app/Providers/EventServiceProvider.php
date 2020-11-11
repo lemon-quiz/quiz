@@ -2,14 +2,12 @@
 
 namespace App\Providers;
 
+use App\Listeners\InstanceCreateListener;
 use App\Listeners\ItemCreateListener;
 use App\Listeners\QuizChangeListener;
 use App\Listeners\QuizCreateListener;
 use App\Listeners\QuizDeleteListener;
-use Illuminate\Auth\Events\Registered;
-use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-use Illuminate\Support\Facades\Event;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -29,11 +27,12 @@ class EventServiceProvider extends ServiceProvider
      *
      * @var string[]
      */
-    protected array $subscribe = [
+    protected $subscribe = [
         QuizCreateListener::class,
         QuizChangeListener::class,
         QuizDeleteListener::class,
         ItemCreateListener::class,
+        InstanceCreateListener::class,
     ];
 
     /**

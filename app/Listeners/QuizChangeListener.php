@@ -61,11 +61,9 @@ class QuizChangeListener
         });
 
         $existingItems = $this->entity->items()->get();
-        $done = [];
         foreach ($items as $position => $item) {
             if ($item['id'] ?? null) {
                 $found = $existingItems->firstWhere('id', $item['id']);
-                $done[] = $item['id'];
                 // Check for change
                 if (
                     $found->item_a !== $item['item_a']

@@ -34,6 +34,8 @@ use LaravelCode\EventSourcing\Models\SearchBehaviourTrait;
  * @method static Builder|Quiz whereRevisionNumber($value)
  * @method static Builder|Quiz whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Instance[] $instances
+ * @property-read int|null $instances_count
  */
 class Quiz extends Model
 {
@@ -58,5 +60,10 @@ class Quiz extends Model
     public function items()
     {
         return $this->hasMany(Item::class);
+    }
+
+    public function instances()
+    {
+        return $this->hasMany(Instance::class);
     }
 }
