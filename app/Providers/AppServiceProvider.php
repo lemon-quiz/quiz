@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Factory\Generator;
+use App\Generators\QuizGenerator;
+use App\Models\Quiz;
 use DB;
 use Illuminate\Support\ServiceProvider;
 use Log;
@@ -34,5 +37,9 @@ class AppServiceProvider extends ServiceProvider
                 );
             });
         }
+
+        app()->bind(Generator::class, function () {
+            return new Generator(new QuizGenerator(new Quiz()));
+        });
     }
 }

@@ -5,7 +5,6 @@ namespace App\Listeners;
 use App\Events\Apply\ItemWasCreated;
 use App\Events\Apply\QuizWasCreated;
 use App\Events\QuizCreate;
-use App\Models\Item;
 use App\Models\Quiz;
 use LaravelCode\EventSourcing\Listeners\ApplyListener;
 
@@ -39,6 +38,7 @@ class QuizCreateListener
 
     /**
      * @param QuizWasCreated $event
+     * @return \Closure
      */
     public function applyQuizWasCreated(QuizWasCreated $event)
     {
